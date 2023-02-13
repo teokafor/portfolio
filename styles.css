@@ -2,6 +2,7 @@
 /*Elements: */
 body {
     background-color: #647e94;
+    margin: 0;
 }
 
 p {
@@ -9,12 +10,44 @@ p {
     margin-top: -3%;
 }
 
+nav > a {
+    color: white;
+    text-align: center;
+    float: left;
+    padding: 0 10px 0 10px;
+    border-right: #FFFFFF solid 2px;
+    text-decoration: none;
+    /*TODO: Give this a wider font to faithfully recreate mockup sheet*/
+}
+
 /*Classes: */
 .main-content {
     width: 1000px;
     background-color: #ccdad6;
     height: 300vh;
-    margin: 100px auto 100px auto;
+    margin: 0 auto 100px auto;
+}
+
+.bg-header {
+    z-index: -1; /*Render under main-content*/
+    width: 100vw;
+    height: 48px;
+    background-color: #1b1816;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.fg-header {
+    z-index: 1; /*Render on top of main-content*/
+    width: 1000px;
+    height: 48px;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    background-color: #302b27;
+    display: flex;
+    align-items: center;
 }
 
 /*Elements with this class should have a 12% gap on each side of the main content*/
@@ -31,7 +64,7 @@ p {
 .project-tab {
     margin: 0 auto 5px;
     width: 100%;
-    height: 48px;
+    height: 32px;
     background-color: #4a4a4a;
     border-style: solid;
     border-color: #4d63a2;
@@ -41,7 +74,6 @@ p {
 
 .project-tab-text {
     padding-left: 10px;
-    padding-top: 10px;
 }
 
 .project-tab-carrot {
@@ -52,11 +84,13 @@ p {
     color:white;
     margin: auto;
     display: inline-block;
+    vertical-align: sub
 }
 
 /*IDs:*/
 #first-header-offset {
-    padding-top: 5%;
+    padding-top: 80px;
+    margin: auto 0 3% 0;
 }
 
 #headshot {
