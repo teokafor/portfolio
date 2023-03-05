@@ -39,7 +39,7 @@ nav > a {
 }
 
 .fg-header {
-    z-index: 1; /*Render on top of main-content*/
+    z-index: 2; /*Render on top of main-content*/
     width: 1000px;
     height: 48px;
     position: fixed;
@@ -62,14 +62,17 @@ nav > a {
 }
 
 .project-tab {
-    margin: 0 auto 5px;
+    margin: -25px auto 5px;
     width: 100%;
     height: 32px;
-    background-color: #4a4a4a;
+    background-color: #F1F1F1;
     border-style: solid;
-    border-color: #4d63a2;
+    border-color: #F1F1F1;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .project-tab-text {
@@ -81,23 +84,29 @@ nav > a {
 }
 /*Common characteristics for project tab text (carrot, header text)*/
 .project-tab > p {
-    color:white;
+    color: black;
     margin: auto;
     display: inline-block;
     vertical-align: sub
 }
 
 .accord-container {
-    padding-top: 20px;
+    padding-top: 25px;
+    transition: height 250ms, opacity 250ms;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 .accord-hide {
-    display: none;
+    height: 0;
+    opacity: 0;
+}
+.accord-show {
+    height: 150px;
+    opacity: 100%;
 }
 
-.accord-show {
-    display: block;
-}
 
 /*IDs:*/
 #first-header-offset {
@@ -109,4 +118,10 @@ nav > a {
     width: 128px;
     height: 128px;
     border-radius: 100%;
+}
+
+#debug {
+    background-color: red;
+    width: 100vw;
+    height: 3px;
 }
