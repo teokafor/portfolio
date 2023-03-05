@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <title>Portfolio - Tobe Okafor</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="main.js"></script>
     </head>
 
     <body>
-        <!--Background header div-->
+    <!--Background header div-->
         <div class="bg-header"></div>
 
         <!--Main content div-->
@@ -46,17 +47,24 @@
                 <section id="projects">
                     <h1>Projects</h1>
                     <div class="indent-two">
-                        <div class="project-tab">
+                        <button class="project-tab" id="tab-1" onclick="accordion('content-1')">
                             <p class="project-tab-carrot"> > </p><p class="project-tab-text">Simple Goals</p>
-                        </div>
+                        </button>
 
-                        <div class="project-tab">
+                        <div id="content-1" class="accord-container accord-hide"><p>Built as a final project for Python, <i>Simple Goals</i> provides a beautiful and efficient way to organize a user's day.</i></p></div>
+
+                        <button class="project-tab" id="tab-2" onclick="accordion('content-2')">
                             <p class="project-tab-carrot"> > </p><p class="project-tab-text">Song Scraper</p>
-                        </div>
+                        </button>
 
-                        <div class="project-tab">
+                        <div id="content-2" class="accord-container accord-hide"><p>Ever wanted to turn web-based radio stations into Spotify playlists? This tool enables the user to do just that. <br><br><i>TOOLS USED: Python, BeautifulSoup4, Spotify API</i></i></i></p></div>
+
+                        <button class="project-tab" id="tab-3" onclick="accordion('content-3')">
                             <p class="project-tab-carrot"> > </p><p class="project-tab-text">RRTF</p>
-                        </div>
+                        </button>
+
+                        <div id="content-3" class="accord-container accord-hide"><p>test, should be hidden initially</p></div>
+
                     </div>
                 </section>
             </div>

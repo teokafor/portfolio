@@ -87,6 +87,18 @@ nav > a {
     vertical-align: sub
 }
 
+.accord-container {
+    padding-top: 20px;
+}
+
+.accord-hide {
+    display: none;
+}
+
+.accord-show {
+    display: block;
+}
+
 /*IDs:*/
 #first-header-offset {
     padding-top: 80px;
