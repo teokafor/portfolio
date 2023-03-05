@@ -14,10 +14,15 @@ nav > a {
     color: white;
     text-align: center;
     float: left;
-    padding: 0 10px 0 10px;
+    padding: 15px 10px;
     border-right: #FFFFFF solid 2px;
     text-decoration: none;
     /*TODO: Give this a wider font to faithfully recreate mockup sheet*/
+}
+
+nav > a:hover {
+    animation: hover-header 250ms;
+    animation-fill-mode: forwards;
 }
 
 /*Classes: */
@@ -130,4 +135,15 @@ nav > a {
     background-color: red;
     width: 100vw;
     height: 3px;
+}
+
+/*Animations: */
+@keyframes hover-header {
+    0% {
+        background-color: #302b27;
+    }
+
+    100% {
+        background-color: #93908D;
+    }
 }
