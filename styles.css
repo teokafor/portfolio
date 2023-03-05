@@ -87,7 +87,7 @@ nav > a {
     color: black;
     margin: auto;
     display: inline-block;
-    vertical-align: sub
+    vertical-align: sub;
 }
 
 .accord-container {
@@ -103,8 +103,14 @@ nav > a {
     opacity: 0;
 }
 .accord-show {
-    height: 150px;
+    height: 400px;
     opacity: 100%;
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 
