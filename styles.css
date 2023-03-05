@@ -80,6 +80,11 @@ nav > a:hover {
     border-radius: 10px;
 }
 
+.project-tab:hover {
+    animation: hover-project-tab 250ms;
+    animation-fill-mode: forwards;
+}
+
 .project-tab-text {
     padding-left: 10px;
 }
@@ -145,5 +150,16 @@ nav > a:hover {
 
     100% {
         background-color: #93908D;
+    }
+}
+
+@keyframes hover-project-tab {
+    0% {
+        background-color: #F1F1F1;
+        border-color: #F1F1F1;
+    }
+    100% {
+        background-color: #BABABA;
+        border-color: #BABABA;
     }
 }
