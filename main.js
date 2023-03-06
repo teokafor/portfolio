@@ -9,9 +9,9 @@ function accordion(contentId) {
         }
     }
 
-    if (targetContainer.className.indexOf("accord-show") == -1) {
+    if (targetContainer.className.indexOf("accord-show") == -1) { // Open the target container
         targetContainer.className += " accord-show";
-    } else {
+    } else { // Close the target container
         targetContainer.className = targetContainer.className.replace(" accord-show", "");
     }
 }
