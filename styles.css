@@ -29,8 +29,8 @@ nav > a:hover {
 .main-content {
     width: 1000px;
     background-color: #ccdad6;
-    height: 300vh;
-    margin: 0 auto 100px auto;
+    height: auto;
+    margin: 0 auto;
 }
 
 .bg-header {
@@ -41,6 +41,15 @@ nav > a:hover {
     position: absolute;
     padding: 0;
     margin: 0;
+}
+
+.bg-footer {
+    z-index: -1; /*Render under main-content*/
+    width: 100%;
+    height: 96px;
+    background-color: #1b1816;
+    display: flex;
+    justify-content: center;
 }
 
 .fg-header {
@@ -54,6 +63,16 @@ nav > a:hover {
     display: flex;
     align-items: center;
 }
+
+.fg-footer {
+    z-index: 2; /*Render on top of main-content*/
+    width: 1000px;
+    height: 96px;
+    padding: 0;
+    margin: 0;
+    background-color: #302b27;
+}
+
 
 /*Elements with this class should have a 12% gap on each side of the main content*/
 .indent-one {
