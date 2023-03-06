@@ -19,7 +19,6 @@ nav > a {
     padding: 15px 10px;
     border-right: #FFFFFF solid 2px;
     text-decoration: none;
-    /*TODO: Give this a wider font to faithfully recreate mockup sheet*/
 }
 
 nav > a:hover {
@@ -55,7 +54,7 @@ h1 {
 .bg-footer {
     z-index: -1; /*Render under main-content*/
     width: 100%;
-    height: 96px;
+    height: auto;
     background-color: #1b1816;
     display: flex;
     justify-content: center;
@@ -80,11 +79,16 @@ h1 {
 .fg-footer {
     z-index: 2; /*Render on top of main-content*/
     width: 1000px;
-    height: 96px;
+    height: auto;
     padding: 0;
     margin: 0;
     background-color: #302b27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
 
 
 /*Elements with this class should have a 12% gap on each side of the main content*/
@@ -156,6 +160,15 @@ h1 {
     position: relative;
 }
 
+.footer-flex-break {
+    height: 0px;
+    color: white;
+    width: 250px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    display: flex;
+}
+
 
 /*IDs:*/
 #first-header-offset {
@@ -176,6 +189,32 @@ h1 {
     height: 3px;
 }
 
+#footer-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom-width: 2px;
+    border-bottom: white;
+}
+
+#fg-footer-icon-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#fg-footer-icon-container > a {
+    width: 48px;
+    height: 48px;
+    margin: 20px;
+    -webkit-filter: invert(100%);
+}
+
+#fg-footer-icon-container > a:hover {
+    animation: hover-footer 250ms;
+    animation-fill-mode: forwards;
+}
+
+
 /*Animations: */
 @keyframes hover-header {
     0% {
@@ -195,5 +234,15 @@ h1 {
     100% {
         background-color: #EEEEEE;
         border-color: #EEEEEE;
+    }
+}
+
+@keyframes hover-footer {
+    0% {
+        -webkit-filter: invert(100%);
+    }
+
+    100% {
+        -webkit-filter: invert(70%);
     }
 }
