@@ -1,7 +1,7 @@
 
 /*Elements: */
 body {
-    background-color: #407163;
+    background-color: #323546;
     margin: 0;
 }
 
@@ -155,14 +155,48 @@ h1 {
     opacity: 0;
 }
 .accord-show {
-    height: 400px;
+    height: 500px;
     opacity: 100%;
 }
 
+/*The container for images*/
 .image-carousel {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+/*For each image in the carousel*/
+.carousel-image {
+
+}
+
+/*Should only be on one image at a time*/
+.image-current {
+    display: block;
+}
+
+.image-hidden {
+    display: none;
+}
+
+.image-button {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-self: center;
+    border-style: none;
+    background-color: transparent;
+}
+
+/*TODO: ANIMATE THESE*/
+.image-prev {
+    transform: rotate(180deg);
+}
+
+/*TODO: ANIMATE THESE*/
+.image-next {
+
 }
 
 .footer-flex-break {
