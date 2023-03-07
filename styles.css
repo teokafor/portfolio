@@ -168,16 +168,25 @@ h1 {
 
 /*For each image in the carousel*/
 .carousel-image {
+    transition: visibility 250ms, opacity 250ms;
+    position: absolute;
+}
 
+/*Used to properly space previous and next arrows, since images are absolute.*/
+.dummy-image {
+    display: block;
+    width: 300px;
+    height: 250px;
 }
 
 /*Should only be on one image at a time*/
 .image-current {
-    display: block;
+    opacity: 100%;
 }
 
 .image-hidden {
-    display: none;
+    opacity: 0%;
+    visibility: collapse;
 }
 
 .image-button {
@@ -189,14 +198,29 @@ h1 {
     background-color: transparent;
 }
 
-/*TODO: ANIMATE THESE*/
 .image-prev {
     transform: rotate(180deg);
+    transition: translate 250ms;
 }
 
-/*TODO: ANIMATE THESE*/
-.image-next {
+.image-prev:hover {
+    translate: -10px;
+}
 
+.image-prev:active {
+    translate: 0;
+}
+
+.image-next {
+    transition: translate 250ms;
+}
+
+.image-next:hover {
+    translate: 10px;
+}
+
+.image-next:active {
+    translate: 0;
 }
 
 .footer-flex-break {
