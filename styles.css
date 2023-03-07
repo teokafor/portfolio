@@ -170,6 +170,8 @@ h1 {
 .carousel-image {
     transition: visibility 250ms, opacity 250ms;
     position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
 }
 
 /*Used to properly space previous and next arrows, since images are absolute.*/
