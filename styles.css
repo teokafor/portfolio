@@ -9,6 +9,7 @@ p {
     font-size: 1.5em;
     margin-top: -3%;
     font-family: 'Roboto Mono', monospace;
+    text-align: justify;
 }
 
 nav > a {
@@ -178,6 +179,8 @@ h1 {
     position: absolute;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 black;
+    width: 300px;
+    height: 250px;
 }
 
 /*Used to properly space previous and next arrows, since images are absolute.*/

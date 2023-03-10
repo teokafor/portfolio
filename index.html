@@ -8,7 +8,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Mono&display=swap"
+              rel="stylesheet">
 
     </head>
 
@@ -36,15 +37,15 @@
                     <img id="headshot" src="resource/headshot.jpg" alt="Headshot">
                     <h1>About Me</h1>
                     <div class="indent-two">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet luctus leo.
-                            Curabitur quis fermentum arcu, eget efficitur magna. Donec consequat ornare ex,
-                            id egestas leo egestas sed. Praesent vitae congue mauris. Integer id neque pretium,
-                            dignissim massa in, egestas ipsum. Maecenas lacinia neque laoreet dui interdum bibendum.
-                            In laoreet metus quam, quis sodales nulla tempus vitae. Fusce tempus ut augue consectetur
-                            rhoncus. Suspendisse lobortis tristique ligula, sit amet ultrices nulla fermentum nec.
-                            Suspendisse congue egestas dolor ut rhoncus. Nullam et vehicula velit. Cras placerat eget
-                            justo eget suscipit. Sed eleifend ullamcorper facilisis. Cras auctor nisi dui. Nunc
-                            condimentum ante quam, vehicula viverra lorem sodales in. </p>
+                        <p>Hello! My name is Tobe, and I'm a Computer Science student currently in the process
+                            of finishing my degree at the <i>University of Northwestern</i> in St. Paul.
+                            <br><br>I am very passionate about problem solving, whether by myself or as a team, and I
+                            love working in the ever-changing field that is Web Development.
+                            <br><br>Some of the tools and languages I consider myself proficient in include
+                            <i>Python, HTML, CSS,</i> and <i>JavaScript.</i>
+                            <br><br>Down below you'll find info on some of the projects I've worked on in the past.
+                            Take a look!
+                        </p>
                     </div>
                 </section>
 
@@ -58,16 +59,18 @@
                         </button>
 
                         <div id="content-1" class="accord-container accord-hide">
-                            <p>Built as a final project for Python, <i>Simple Goals</i> provides a beautiful and
-                                efficient way to organize a user's day.</i></p>
+                            <p>Built with a fellow student as a final project for a Python class,
+                                <i>Simple Goals</i> provides a beautiful and efficient way to organize a user's day.
+                                <br><br>Tools Used: Python, SQLite3, PyQt5
+                            </p>
                             <div class="image-carousel">
                                 <button class="image-button image-prev" onclick="imageCarousel('content-1', 'prev')">
                                     <img src="resource/arrow.svg">
                                 </button>
                                 <div class="dummy-image"></div>
-                                <img src="https://plchldr.co/i/300x250?&bg=9E2855&fc=eeeeee&text=300x250%20(1)" class="carousel-image image-current">
-                                <img src="https://plchldr.co/i/300x250?&bg=68FEF2&fc=000000&text=300x250%20(2)" class="carousel-image image-hidden">
-                                <img src="https://plchldr.co/i/300x250?&bg=FA23FC&fc=eeeeee&text=300x250%20(3)" class="carousel-image image-hidden">
+                                <img src="resource/images/sg1.png" class="carousel-image image-current">
+                                <img src="resource/images/sg2.png" class="carousel-image image-hidden">
+                                <img src="resource/images/sg3.png" class="carousel-image image-hidden">
                                 <button class="image-button image-next" onclick="imageCarousel('content-1', 'next')">
                                     <img src="resource/arrow.svg">
                                 </button>
@@ -81,16 +84,17 @@
 
                         <div id="content-2" class="accord-container accord-hide">
                             <p>Ever wanted to turn web-based radio stations into Spotify playlists? This tool
-                                enables the user to do just that. <br><br><i>TOOLS USED: Python, BeautifulSoup4,
-                                    Spotify API</i></p>
+                                enables you to do just that.
+                                <br><br>Tools Used: Python, BeautifulSoup4, Spotify API
+                            </p>
                             <div class="image-carousel">
                                 <button class="image-button image-prev" onclick="imageCarousel('content-2', 'prev')">
                                     <img src="resource/arrow.svg">
                                 </button>
                                 <div class="dummy-image"></div>
-                                <img src="https://plchldr.co/i/300x250?&bg=EAB464&fc=000000&text=300x250%20(1)" class="carousel-image image-current">
-                                <img src="https://plchldr.co/i/300x250?&bg=C21CEF&fc=000000&text=300x250%20(2)" class="carousel-image image-hidden">
-                                <img src="https://plchldr.co/i/300x250?&bg=A28FF2&fc=000000&text=300x250%20(3)" class="carousel-image image-hidden">
+                                <img src="resource/images/rs1.png" class="carousel-image image-current">
+                                <img src="resource/images/rs2.png" class="carousel-image image-hidden">
+                                <img src="resource/images/rs3.png" class="carousel-image image-hidden">
                                 <button class="image-button image-next" onclick="imageCarousel('content-2', 'next')">
                                     <img src="resource/arrow.svg">
                                 </button>
@@ -99,19 +103,23 @@
 
                         <button class="project-tab" id="tab-3" onclick="accordion('content-3', 'carrot-3')">
                             <img src="resource/arrow.svg" class="project-tab-carrot" id="carrot-3">
-                            <p class="project-tab-text">RRTF</p>
+                            <p class="project-tab-text">Rum River Tree Farm - Delivery System</p>
                         </button>
 
                         <div id="content-3" class="accord-container accord-hide">
-                            <p>test, should be hidden initially</p>
+                            <p>Built with a fellow student for a Systems Analysis & Design Class, our proposed
+                                system would alleviate manual labor needed for scheduling and routing delivery
+                                drivers.
+                                <br><br>
+                            </p>
                             <div class="image-carousel">
                                 <button class="image-button image-prev" onclick="imageCarousel('content-3', 'prev')">
                                     <img src="resource/arrow.svg">
                                 </button>
                                 <div class="dummy-image"></div>
-                                <img src="https://plchldr.co/i/300x250?&bg=FFEAF2&fc=000000&text=300x250%20(1)"class="carousel-image image-current">
-                                <img src="https://plchldr.co/i/300x250?&bg=2262FE&fc=ffffff&text=300x250%20(2)"class="carousel-image image-hidden">
-                                <img src="https://plchldr.co/i/300x250?&bg=BCED79&fc=000000&text=300x250%20(3)"class="carousel-image image-hidden">
+                                <img src="resource/images/rrtf1.png"class="carousel-image image-current">
+                                <img src="resource/images/rrtf2.png"class="carousel-image image-hidden">
+                                <img src="resource/images/rrtf3.png"class="carousel-image image-hidden">
                                 <button class="image-button image-next" onclick="imageCarousel('content-3', 'next')">
                                     <img src="resource/arrow.svg">
                                 </button>
